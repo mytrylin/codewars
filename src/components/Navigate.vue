@@ -6,7 +6,7 @@
     <ul class="menu">
       <li v-for="(item, index) in menuItems" :key="index" class="menu-item">
         <i :class="item.icon"></i>
-        <RouterLink to="/CreatePhoneNumber">
+        <RouterLink :to="item.url">
           <span>{{ item.pageName }}</span>
         </RouterLink>
       </li>
