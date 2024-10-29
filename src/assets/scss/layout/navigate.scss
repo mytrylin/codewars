@@ -1,0 +1,104 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  transition: width 0.3s ease;
+  position: relative;
+
+  &.collapsed {
+    width: 50px;
+
+    .menu-item span {
+      display: none;
+    }
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+
+  }
+
+  .menu {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+
+    .menu-item {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+}
+
+.btn-56,
+.btn-56 *,
+.btn-56 :after,
+.btn-56 :before,
+.btn-56:after,
+.btn-56:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-56 {
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.btn-56:disabled {
+  cursor: default;
+}
+.btn-56:-moz-focusring {
+  outline: auto;
+}
+.btn-56 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-56 [hidden] {
+  display: none;
+}
+.btn-56 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: .2rem .5rem;
+  text-transform: uppercase;
+}
+.btn-56:hover {
+  -webkit-animation: pulse 0.5s;
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 2em transparent;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
