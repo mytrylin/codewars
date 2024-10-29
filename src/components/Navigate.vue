@@ -6,24 +6,26 @@
     <ul class="menu">
       <li v-for="(item, index) in menuItems" :key="index" class="menu-item">
         <i :class="item.icon"></i>
-        <span v-if="!isCollapsed">{{ item.label }}</span>
+        <RouterLink to="/CreatePhoneNumber">
+          <span>{{ item.pageName }}</span>
+        </RouterLink>
       </li>
     </ul>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
-const isCollapsed = ref(false);
-const toggleSidebar = () => (isCollapsed.value = !isCollapsed.value);
+const isCollapsed = ref(false)
+const toggleSidebar = () => (isCollapsed.value = !isCollapsed.value)
 
 const menuItems = [
-  { label: 'Home', icon: 'icon-home' },
-  { label: 'Settings', icon: 'icon-settings' },
-  { label: 'Profile', icon: 'icon-user' },
-  { label: 'Messages', icon: 'icon-messages' }
-];
+  { pageName: 'Home', icon: 'icon-home', url: '/' },
+  { pageName: 'CreatePhoneNumber', icon: 'icon-settings', url: '/CreatePhoneNumber' },
+  { pageName: 'Profile', icon: 'icon-user' },
+  { pageName: 'Messages', icon: 'icon-messages' }
+]
 </script>
 
 
