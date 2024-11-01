@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Create Phone Number</h1>
+    <h1>Create Phone Number (codewars)</h1>
     <section>
       <div class="pathe">
         <h3 class="title">Description</h3>
@@ -21,7 +21,7 @@
       <div class="pathe">
         <h3 class="title">URL</h3>
         <div>
-          <a :href="codewarsURL" target="_blank">{{ codewarsURL }}</a>
+          <a :href="codewarsURL" target="_blank" class="url-link">{{ codewarsURL }}</a>
         </div>
       </div>
     </section>
@@ -54,69 +54,4 @@ const phoneOutput = computed(() => createPhoneNumber(splitToArray(phone.value)))
 //   `(${val.slice(0, 4).join('')}) ${val.slice(4, 7).join('')} - ${val.slice(7, 10).join('')
 </script>
 <style scoped>
-/* 整體樣式 */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-
-/* 標題樣式 */
-h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* 區段樣式 */
-section {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* 小標題樣式 */
-.title {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* 內文樣式 */
-.pathe {
-  line-height: 1.6;
-  color: #666;
-}
-
-/* 輸入框樣式 */
-input[type="text"] {
-  padding: 10px;
-  width: 100%;
-  max-width: 300px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* 輸出電話號碼樣式 */
-p {
-  font-size: 1rem;
-  margin-top: 15px;
-  color: #333;
-  font-weight: bold;
-}
-
-/* 說明文字的容器樣式 */
-section div {
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9rem;
-}
 </style>

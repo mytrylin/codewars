@@ -23,7 +23,7 @@ const toggleSidebar = () => (isCollapsed.value = !isCollapsed.value)
 const menuItems = [
   { pageName: 'Home', icon: 'icon-home', url: '/' },
   { pageName: 'CreatePhoneNumber', icon: 'icon-settings', url: '/CreatePhoneNumber' },
-  { pageName: 'Profile', icon: 'icon-user' },
+  { pageName: '反轉字串 (Reverse String)', icon: 'icon-user', url: '/ReverseString' },
   { pageName: 'Messages', icon: 'icon-messages' }
 ]
 </script>
