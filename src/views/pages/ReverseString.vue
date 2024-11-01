@@ -1,20 +1,16 @@
 <template>
   <div>
-    <h1>反轉字串 (Reverse String) (algorithm)</h1>
+    <h1>{{ titleText }}</h1>
     <section>
       <div class="pathe">
         <h3 class="title">Description</h3>
-        <div>
-          寫一個函數來反轉給定的字串
-        </div>
+        <div>{{ descriptionText }}</div>
       </div>
     </section>
     <section>
       <div class="pathe">
         <h3 class="title">Example</h3>
-        <div>
-          console.log(reverseString("hello")); // "olleh"
-        </div>
+        <div>{{ exampleText }}</div>
       </div>
     </section>
     <section>
@@ -25,6 +21,10 @@
   </div>
 </template>
 <script setup>
+const titleText = ref('反轉字串 (Reverse String) (algorithm)')
+const descriptionText = ref('寫一個函數來反轉給定的字串')
+const exampleText = ref('console.log(reverseString("hello")); // "olleh"')
+
 const inputVal = ref('')
 
 const solution = computed(() => inputVal.value.split('').reverse().join(''))
