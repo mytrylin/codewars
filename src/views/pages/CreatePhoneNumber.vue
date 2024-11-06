@@ -1,5 +1,14 @@
 <template>
-  <div>
+  <Content
+    :title="titleText"
+    :description="descriptionText"
+    :example="exampleText"
+    :url="urlPath"
+  >
+    <input type="text" v-model="inputVal" maxlength="10">
+    <div v-if="inputVal">{{ solution }}</div>
+  </Content>
+  <!-- <div>
     <h1>{{ titleText }}</h1>
     <section>
       <div class="pathe">
@@ -30,9 +39,11 @@
       <input type="text" v-model="inputVal" maxlength="10">
       <div v-if="inputVal">{{ solution }}</div>
     </section>
-  </div>
+  </div> -->
 </template>
 <script setup>
+import Content from '@/components/Content.vue'
+
 const titleText = ref('Create Phone Number (codewars)')
 const descriptionText = ref('編寫一個接受 10 個整數（0 到 9 之間）的陣列的函數，該函數以電話號碼的形式傳回這些數字的字串')
 const exampleText = ref('reatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"')
