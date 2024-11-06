@@ -3,11 +3,20 @@
 }
 .sidebar {
   width: 200px;
-  height: 100vh;
   background-color: #333;
   color: #fff;
   transition: width 0.3s ease;
   position: relative;
+
+  .toggle-button {
+    // position: absolute;
+    // top: 10px;
+    // right: -15px;
+    position: fixed;
+    top: 20px;
+    left: 185px;
+    transition: width .3s ease, left .3s ease;
+  }
 
   &.collapsed {
     width: 50px;
@@ -15,13 +24,10 @@
     .menu-item span {
       display: none;
     }
-  }
-
-  .toggle-button {
-    position: absolute;
-    top: 10px;
-    right: -15px;
-
+    .toggle-button {
+      left: 35px;
+      transition: width .3s ease, left .3s ease;
+    }
   }
 
   .menu {
