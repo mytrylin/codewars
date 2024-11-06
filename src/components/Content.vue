@@ -1,23 +1,14 @@
 <template>
   <div>
     <h1>{{ props.title }}</h1>
-    <section>
+    <section v-for="(item, index) in Object.keys(props).slice(1)">
       <div class="pathe">
-        <h3 class="title">Description</h3>
-        <div>{{ props.description }}</div>
-      </div>
-    </section>
-    <section>
-      <div class="pathe">
-        <h3 class="title">Example</h3>
-        <div>{{ props.example }}</div>
-      </div>
-    </section>
-    <section v-if="props.url">
-      <div class="pathe">
-        <h3 class="title">URL</h3>
+        <h3 class="title">{{ wordToUpperCase(item) }}</h3>
         <div>
-          <a :href="props.url" target="_blank" class="url-link">{{ props.url }}</a>
+          <a v-if="item === 'url'" :href="props[item]" 
+            target="_blank" class="url-link">{{ props[item] }}
+          </a>
+          <template v-else>{{ props[item] }}</template>
         </div>
       </div>
     </section>
@@ -46,4 +37,8 @@ const props = defineProps({
     default: ''
   }
 })
+const wordToUpperCase = (word) => {
+  if (!word) return
+  return word[0].toUpperCase() + word.slice(1)
+}
 </script>

@@ -8,38 +8,6 @@
     <input type="text" v-model="inputVal" maxlength="10">
     <div v-if="inputVal">{{ solution }}</div>
   </Content>
-  <!-- <div>
-    <h1>{{ titleText }}</h1>
-    <section>
-      <div class="pathe">
-        <h3 class="title">Description</h3>
-        <div>
-          {{ descriptionText }}
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="pathe">
-        <h3 class="title">Example</h3>
-        <div>
-          {{ exampleText }}
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="pathe">
-        <h3 class="title">URL</h3>
-        <div>
-          <a :href="urlPath" target="_blank" class="url-link">{{ urlPath }}</a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3 class="title">Implementation</h3>
-      <input type="text" v-model="inputVal" maxlength="10">
-      <div v-if="inputVal">{{ solution }}</div>
-    </section>
-  </div> -->
 </template>
 <script setup>
 import Content from '@/components/Content.vue'
@@ -50,7 +18,6 @@ const exampleText = ref('reatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => 
 const urlPath = ref('https://www.codewars.com/kata/525f50e3b73515a6db000b83')
 
 const inputVal = ref('')
-
 const solution = computed(() => {
   let val = inputVal.value.split('')
   return val.length ?
