@@ -1,6 +1,6 @@
 <template>
   <div :class="['sidebar', { collapsed: isCollapsed }]">
-    <button @click="toggleSidebar" class="btn-56 toggle-button">
+    <button @click="toggleSidebar" class="effect-button toggle-button">
       {{ isCollapsed ? '>' : '<' }}
     </button>
     <ul class="menu">
