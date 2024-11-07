@@ -3,6 +3,7 @@ const Index = () => import('../views/Index.vue')
 const CreatePhoneNumber = () => import('../views/pages/CreatePhoneNumber.vue')
 const ReverseString = () => import('../views/pages/ReverseString.vue')
 const CharacterCount = () => import('../views/pages/CharacterCount.vue')
+const ArrayRemoveDuplicates = () => import('../views/pages/ArrayRemoveDuplicates.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -22,6 +23,10 @@ const router = createRouter({
     {
       path: '/CharacterCount',
       component: CharacterCount
+    },
+    {
+      path: '/ArrayRemoveDuplicates',
+      component: ArrayRemoveDuplicates
     },
   ]
 })
