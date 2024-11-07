@@ -1,5 +1,15 @@
 .app-container {
   display: flex;
+  flex-direction: row;
+
+  /* 小螢幕樣式 */
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .content {
+      padding: 15px;
+    }
+  }
 }
 
 .content {
@@ -7,4 +17,15 @@
   padding: 20px;
   background-color: #f0f2f5;
   min-height: 100vh;
+
+  /* 中等螢幕樣式 */
+  @media (max-width: 1400px) {
+    padding: 10px;
+  }
+
+  /* 小螢幕樣式 */
+  @media (max-width: 786px) {
+    padding: 5px;
+    min-height: auto;
+  }
 }

@@ -34,7 +34,7 @@ const source =ref(`
     function solution(A) { \n
       let charCount = {} \n
       for (let char of inputVal.value) { \n
-        charCount[char] = ( charCount[char] || 0) + 1 \n
+        charCount[char] = ( charCount[char] || 0) + 1 )\n
       } \n
       return charCount \n
     } \n

@@ -1,38 +1,19 @@
 .router-link-active {
   text-decoration: none;
 }
+
 .sidebar {
   width: 200px;
+  min-height: 100%;
   background-color: #333;
   color: #fff;
-  transition: width 0.3s ease;
+  transition: transform 0.3s ease, height 0.3s ease;
   position: relative;
 
-  .toggle-button {
-    // position: absolute;
-    // top: 10px;
-    // right: -15px;
-    position: fixed;
-    top: 20px;
-    left: 185px;
-    transition: width .3s ease, left .3s ease;
-  }
-
-  &.collapsed {
-    width: 50px;
-
-    .menu-item span {
-      display: none;
-    }
-    .toggle-button {
-      left: 35px;
-      transition: width .3s ease, left .3s ease;
-    }
-  }
-
+  /* 預設為 PC 和平板模式的側邊欄 */
   .menu {
     list-style: none;
-    padding: 20px 0;
+    // padding: 20px 0;
     margin: 0;
 
     .menu-item {
@@ -51,7 +32,71 @@
       }
     }
   }
+
+  .toggle-button {
+    display: none; /* 預設隱藏按鈕 */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    color: #fff;
+  }
 }
+
+/* 手機模式 (width < 320px) */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* 預設高度只顯示按鈕 */
+    min-height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transform: translateY(0);
+    z-index: 5;
+
+    .toggle-button {
+      display: block;
+      position: relative;
+      left: 10px;
+      // top: 0px;
+      top: 1vh;
+      font-size: 24px;
+    }
+
+    /* 當展開時增加高度來顯示清單 */
+    &.expanded {
+      height: auto;
+      .toggle-button {
+        top: 1vh;
+      }
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      
+      /* 當展開時顯示清單 */
+      &.expanded-menu {
+        display: flex;
+      }
+
+      .menu-item {
+        padding: 10px;
+        text-align: center;
+        // border-top: 1px solid #555;
+      }
+    }
+  }
+}
+
 
 .effect-button,
 .effect-button *,
