@@ -6,7 +6,7 @@
       </div>
     <ul class="menu" :class="{ 'expanded-menu': isExpanded }">
       <RouterLink v-for="(item, index) in menuItems" :key="index"
-        :to="item.url" 
+        :to="item.url" @click="toggleSidebar"
       >
         <li class="menu-item">
           <i :class="item.icon"></i>
