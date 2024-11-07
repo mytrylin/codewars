@@ -1,0 +1,27 @@
+{
+  "liveSassCompile.settings.autoprefix": [
+  //指定自動添加前綴詞的樣式
+    "> 1%", "last 2 versions"
+    //添加大於 1% 的瀏覽器市佔率的前綴詞，以及最新兩個版本的前綴詞
+  ],
+  "liveSassCompile.settings.formats": [
+  //指定編譯後的 CSS 檔案格式和路徑
+    {
+      "format": "compressed",
+      //expanded 未壓縮（可閱讀）/compressed 壓縮（體積小，專案上線用）
+      "extensionName": ".min.css",
+      //指定編譯後的 CSS 檔案名稱為 .css
+      "savePath": "src/assets/css/"
+      // 儲存路徑
+    }
+  ],
+  // "liveSassCompile.settings.excludeList": [
+    // 排除特定檔案，不執行編譯。
+      // "**/node_modules/**",
+      // ".vscode/**",
+  // ],
+  "liveSassCompile.settings.showAnnouncements": null,
+  //是否在編譯時顯示通知
+  "liveSassCompile.settings.generateMap": false,
+  //是否產生 sourcemap 檔
+}
