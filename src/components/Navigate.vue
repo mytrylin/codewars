@@ -4,12 +4,14 @@
       {{ isCollapsed ? '>' : '<' }}
     </button>
     <ul class="menu">
-      <li v-for="(item, index) in menuItems" :key="index" class="menu-item">
-        <i :class="item.icon"></i>
-        <RouterLink :to="item.url">
+      <RouterLink v-for="(item, index) in menuItems" :key="index"
+        :to="item.url" 
+      >
+        <li class="menu-item">
+          <i :class="item.icon"></i>
           <span>{{ item.pageName }}</span>
-        </RouterLink>
-      </li>
+        </li>
+      </RouterLink>
     </ul>
   </div>
 </template>
