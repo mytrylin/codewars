@@ -17,17 +17,12 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router'
+import { menuItems } from '@/common/constants/menuItems'
 
 const isCollapsed = ref(false)
 const toggleSidebar = () => (isCollapsed.value = !isCollapsed.value)
 
-const menuItems = [
-  { pageName: 'Home', icon: 'icon-home', url: '/' },
-  { pageName: 'CreatePhoneNumber', icon: 'icon-settings', url: '/CreatePhoneNumber' },
-  { pageName: '反轉字串 (Reverse String)', icon: 'icon-user', url: '/ReverseString' },
-  { pageName: 'Messages', icon: 'icon-messages' }
-]
 </script>
 
 
