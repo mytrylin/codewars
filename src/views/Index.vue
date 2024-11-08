@@ -1,24 +1,12 @@
 <template>
   <h1>Algorithm Practice</h1>
   <section class="index-section">
-    <div class="index-item"
-      v-for="(item, index) in menuItems" :key="index"
-    >
-      <router-link :to="item.url" class="url-link">
+    <router-link v-for="(item, index) in menuItems" :key="index"
+      :to="item.url" class="url-link">
+      <div class="index-item">
         {{ item.pageName }}
-      </router-link>
-    </div>
-    <!-- <div>
-      <ul class="index-ul">
-        <router-link v-for="(item, index) in menuItems"
-          :key="index" :to="item.url" class="url-link index-item"
-        >
-          <li class="index-li">
-            {{ item.pageName }}
-          </li>
-        </router-link>
-      </ul>
-    </div> -->
+      </div>
+    </router-link>
   </section>
 </template>
 <script setup>
