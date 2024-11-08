@@ -7,6 +7,8 @@ const ArrayRemoveDuplicates = () => import('../views/pages/ArrayRemoveDuplicates
 const PalindromeCheck = () => import('../views/pages/PalindromeCheck.vue')
 const SumArray = () => import('../views/pages/SumArray.vue')
 const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
+const CharacterTypeDescription = () => import('../views/pages/CharacterTypeDescription.vue')
+
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -15,6 +17,7 @@ const router = createRouter({
       path: '/',
       component: Index,
     },
+    // 1-5
     {
       path: '/CreatePhoneNumber',
       component: CreatePhoneNumber
@@ -35,6 +38,7 @@ const router = createRouter({
       path: '/PalindromeCheck',
       component: PalindromeCheck
     },
+    // 6-10
     {
       path: '/SumArray',
       component: SumArray
@@ -42,6 +46,10 @@ const router = createRouter({
     {
       path: '/mergeSortedArrays',
       component: mergeSortedArrays
+    },
+    {
+      path: '/CharacterTypeDescription',
+      component: CharacterTypeDescription
     },
   ]
 })

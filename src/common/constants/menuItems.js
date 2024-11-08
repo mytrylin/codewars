@@ -45,29 +45,29 @@ export const menuItems = [
     icon: 'icon-settings'
   },
   {
-    title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-    pageName: 'PalindromeCheck',
-    url: '/PalindromeCheck',
+    title: '[Codility] 字元類型描述函數 (Character type description function)',
+    pageName: 'CharacterTypeDescription',
+    url: '/CharacterTypeDescription',
     icon: 'icon-settings'
   },
-  {
-    title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-    pageName: 'PalindromeCheck',
-    url: '/PalindromeCheck',
-    icon: 'icon-settings'
-  },
-  {
-    title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-    pageName: 'PalindromeCheck',
-    url: '/PalindromeCheck',
-    icon: 'icon-settings'
-  },
+  // {
+  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
+  //   pageName: 'PalindromeCheck',
+  //   url: '/PalindromeCheck',
+  //   icon: 'icon-settings'
+  // },
+  // {
+  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
+  //   pageName: 'PalindromeCheck',
+  //   url: '/PalindromeCheck',
+  //   icon: 'icon-settings'
+  // },
   //11
-  {
-    title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-    pageName: 'PalindromeCheck',
-    url: '/PalindromeCheck',
-    icon: 'icon-settings'
-  },
+  // {
+  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
+  //   pageName: 'PalindromeCheck',
+  //   url: '/PalindromeCheck',
+  //   icon: 'icon-settings'
+  // },
 
 ]
