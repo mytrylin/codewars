@@ -8,6 +8,7 @@ const PalindromeCheck = () => import('../views/pages/PalindromeCheck.vue')
 const SumArray = () => import('../views/pages/SumArray.vue')
 const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
 const CharacterTypeDescription = () => import('../views/pages/CharacterTypeDescription.vue')
+const ShuffleArraySort = () => import('../views/pages/ShuffleArraySort.vue')
 
 
 const router = createRouter({
@@ -50,6 +51,10 @@ const router = createRouter({
     {
       path: '/CharacterTypeDescription',
       component: CharacterTypeDescription
+    },
+    {
+      path: '/ShuffleArraySort',
+      component: ShuffleArraySort
     },
   ]
 })

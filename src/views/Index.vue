@@ -42,10 +42,8 @@ import { menuItems } from '@/common/constants/menuItems'
 
 </script>
 <style scoped>
-section div:hover {
-  box-sizing: border-box;
-  box-shadow: 5px 5px 15px;
-  transition: 1;
+section div {
+  min-height: 80px;
 }
 .index-section {
   display: flex;
@@ -57,6 +55,11 @@ section div:hover {
   max-width: 250px;
   margin: 5px;
   font-size: 20px;
+}
+.index-item:hover {
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px;
+  transition: 1;
 }
 
 @media (max-width: 768px) {

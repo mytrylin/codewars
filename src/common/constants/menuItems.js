@@ -50,12 +50,12 @@ export const menuItems = [
     url: '/CharacterTypeDescription',
     icon: 'icon-settings'
   },
-  // {
-  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-  //   pageName: 'PalindromeCheck',
-  //   url: '/PalindromeCheck',
-  //   icon: 'icon-settings'
-  // },
+  {
+    title: '[Algorithm] 隨機陣列排序 (Shuffle Array Sort)',
+    pageName: 'ShuffleArraySort',
+    url: '/ShuffleArraySort',
+    icon: 'icon-settings'
+  },
   // {
   //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
   //   pageName: 'PalindromeCheck',

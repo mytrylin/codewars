@@ -14,20 +14,19 @@
 <script setup>
 import Content from '@/components/Content.vue'
 
-const title = ref('[Algorithm] 陣列的元素之和 (Sum of Array Elements)')
-const description = ref('寫一個函數來計算陣列中所有元素的和')
-const example = ref('console.log(sumArray([1, 2, 3, 4])); // 10')
+const title = ref('[Algorithm] 隨機陣列排序 (Shuffle Array Sort)')
+const description = ref('隨機打亂陣列中的元素順序')
+const example = ref('console.log(shuffleArray([1, 2, 3, 4, 5])); // 隨機排序的陣列，例如 [3, 1, 5, 2, 4]')
 
 const inputVal = ref('')
 const solution = computed(() => {
-  return inputVal.value.split('').reduce((sum, cur) => sum + parseInt(cur), 0)
+  return inputVal.value.split('').sort(() => Math.random() - 0.5)
 })
 
 const source =ref(`
   \`\`\`javascript
     function solution(A) { \n
-      let val = A.split('') \n
-      return val.reduce((sum, cur) => sum + parseInt(cur), 0) \n
+      return A.sort(() => Math.random() - 0.5) \n
     }
   \`\`\`
 `)
