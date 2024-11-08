@@ -17,7 +17,7 @@
 import Content from '@/components/Content.vue'
 
 const title = ref('[Algorithm] 陣列去重 (Remove Duplicates from an Array)')
-const description = ref('寫一個函數，去除一個數組中的重複值')
+const description = ref('寫一個函數，去除一個陣列中的重複值')
 const example = ref('console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]')
 
 const inputVal = ref('')

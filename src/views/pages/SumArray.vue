@@ -16,8 +16,8 @@
 //在vite.config 改 resolve alias 為 @ 之後，可由./src底下開始map檔案路徑，不必再從相對路徑找檔案
 import Content from '@/components/Content.vue'
 
-const title = ref('[Algorithm] 數組的元素之和 (Sum of Array Elements)')
-const description = ref('寫一個函數來計算數組中所有元素的和')
+const title = ref('[Algorithm] 陣列的元素之和 (Sum of Array Elements)')
+const description = ref('寫一個函數來計算陣列中所有元素的和')
 const example = ref('console.log(sumArray([1, 2, 3, 4])); // 10')
 
 const inputVal = ref('')
@@ -28,7 +28,7 @@ const solution = computed(() => {
 const source =ref(`
   \`\`\`javascript
     function solution(A) { \n
-      let val = String(A).split('') \n
+      let val = A.split('') \n
       return val.reduce((sum, cur) => sum + parseInt(cur), 0) \n
     }
   \`\`\`

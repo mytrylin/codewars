@@ -6,6 +6,7 @@ const CharacterCount = () => import('../views/pages/CharacterCount.vue')
 const ArrayRemoveDuplicates = () => import('../views/pages/ArrayRemoveDuplicates.vue')
 const PalindromeCheck = () => import('../views/pages/PalindromeCheck.vue')
 const SumArray = () => import('../views/pages/SumArray.vue')
+const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -37,6 +38,10 @@ const router = createRouter({
     {
       path: '/SumArray',
       component: SumArray
+    },
+    {
+      path: '/mergeSortedArrays',
+      component: mergeSortedArrays
     },
   ]
 })
