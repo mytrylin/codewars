@@ -5,6 +5,7 @@ const ReverseString = () => import('../views/pages/ReverseString.vue')
 const CharacterCount = () => import('../views/pages/CharacterCount.vue')
 const ArrayRemoveDuplicates = () => import('../views/pages/ArrayRemoveDuplicates.vue')
 const PalindromeCheck = () => import('../views/pages/PalindromeCheck.vue')
+const SumArray = () => import('../views/pages/SumArray.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -32,6 +33,10 @@ const router = createRouter({
     {
       path: '/PalindromeCheck',
       component: PalindromeCheck
+    },
+    {
+      path: '/SumArray',
+      component: SumArray
     },
   ]
 })
