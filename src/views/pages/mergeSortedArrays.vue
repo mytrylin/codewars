@@ -40,6 +40,11 @@ const solution = computed(() => {
   return mergeArray.concat(arr1.slice(i)).concat(arr2.slice(j))
   // return [...new Set(mergeArray.concat(arr1.slice(i)).concat(arr2.slice(j)))]
 })
+/**
+ * concat() 可將陣列做連結
+ * slice() 將陣列內容切出一部份，不會改變原始陣列，參數1取陣列起始key位置，參數2取陣列結尾位置 (選填，不填則取到陣列結尾)
+ * push() 直接修改陣列，並回傳一個新的長度，concat() 不修改原陣列，回傳合併後的新陣列長度
+ */
 
 const source =ref(`
   \`\`\`javascript
