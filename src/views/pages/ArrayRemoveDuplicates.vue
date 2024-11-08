@@ -7,7 +7,7 @@
   >
     <template v-slot:implementation>
       <input type="text" v-model="inputVal" maxlength="10">
-      <div v-if="solution">{{ solution }}</div>
+      <div v-if="inputVal">{{ solution }}</div>
     </template>
   </Content>
 </template>

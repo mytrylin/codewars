@@ -7,7 +7,7 @@
   >
     <template v-slot:implementation>
       <input type="text" v-model="inputVal" maxlength="40">
-      <div v-if="solution">{{ solution }}</div>
+      <div v-if="inputVal">{{ solution }}</div>
     </template>
   </Content>
 </template>
@@ -33,7 +33,7 @@ const source =ref(`
   \`\`\`javascript
     function solution(A) { \n
       let charCount = {} \n
-      for (let char of inputVal.value) { \n
+      for (let char of A) { \n
         charCount[char] = ( charCount[char] || 0) + 1 )\n
       } \n
       return charCount \n

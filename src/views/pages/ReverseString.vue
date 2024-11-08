@@ -7,7 +7,7 @@
   >
     <template v-slot:implementation>
       <input type="text" v-model="inputVal" maxlength="10">
-      <div v-if="solution">{{ solution }}</div>
+      <div v-if="inputVal">{{ solution }}</div>
     </template>
   </Content>
 </template>
@@ -26,7 +26,7 @@ const solution = computed(() => inputVal.value.split('').reverse().join(''))
 const source =ref(`
   \`\`\`javascript
     function solution(A) { \n
-      A.split('').reverse().join('') \n
+      return A.split('').reverse().join('') \n
     }
   \`\`\`
 `)
