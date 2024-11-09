@@ -1,6 +1,6 @@
 <template>
   <h1>Codewars & Algorithm</h1>
-  <h2>Algorithm</h2>
+  <h2>All List</h2>
   <section class="index-section">
     <router-link v-for="(item, index) in menuItems.slice(1)" :key="index"
       :to="item.url" class="url-link index-item">
@@ -9,36 +9,31 @@
       </div>
     </router-link>
   </section>
-  <h2>Codewars</h2>
-  <section class="index-section">
-    <router-link v-for="(item, index) in menuItems.slice(3, 7)" :key="index"
-      :to="item.url" class="url-link index-item">
-      <div class="">
-        <p>{{ index + 1 }}.{{ item.title }}</p>
-      </div>
-    </router-link>
-  </section>
-  <h2>LeetCode</h2>
-  <section class="index-section">
-    <router-link v-for="(item, index) in menuItems.slice(3, 11)" :key="index"
-      :to="item.url" class="url-link index-item">
-      <div class="">
-        <p>{{ index + 1 }}.{{ item.title }}</p>
-      </div>
-    </router-link>
-  </section>
-  <h2>Codility</h2>
-  <section class="index-section">
-    <router-link v-for="(item, index) in menuItems.slice(5, 9)" :key="index"
-      :to="item.url" class="url-link index-item">
-      <div class="">
-        <p>{{ index + 1 }}.{{ item.title }}</p>
-      </div>
-    </router-link>
-  </section>
+  <template v-for="(groups, category) in groupsMenu" :key="category">
+    <h2>{{ category }}</h2>
+    <section class="index-section">
+      <router-link v-for="(item, index) in groups" :key="index"
+        :to="item.url" class="url-link index-item">
+        <div class="">
+          <p>{{ index + 1 }}.{{ item.title }}</p>
+        </div>
+      </router-link>
+    </section>
+  </template>
 </template>
 <script setup>
 import { menuItems } from '@/common/constants/menuItems'
+
+const groupsMenu = computed(() => {
+  return menuItems.slice(1).reduce((groups, item) => {
+    if (!groups[item.category]) {
+      groups[item.category] = []
+    }
+
+    groups[item.category].push(item)
+    return groups
+  }, {})
+})
 
 </script>
 <style scoped>
