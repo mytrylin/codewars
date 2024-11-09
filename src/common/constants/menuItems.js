@@ -69,12 +69,12 @@ export const menuItems = [
     category: categoryList[0],
     icon: 'icon-settings'
   },
-  // {
-  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-  //   pageName: 'PalindromeCheck',
-  //   url: '/PalindromeCheck',
-  //   icon: 'icon-settings'
-  // },
+  {
+    title: '[Algorithm] 群組化物件陣列 (Group Array of Objects by Property)',
+    pageName: 'GroupArrayByProperty',
+    url: '/GroupArrayByProperty',
+    icon: 'icon-settings'
+  },
   //11
   // {
   //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',

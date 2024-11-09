@@ -9,7 +9,7 @@ const SumArray = () => import('../views/pages/SumArray.vue')
 const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
 const CharacterTypeDescription = () => import('../views/pages/CharacterTypeDescription.vue')
 const ShuffleArraySort = () => import('../views/pages/ShuffleArraySort.vue')
-
+const GroupArrayByProperty = () => import('../views/pages/GroupArrayByProperty.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -55,6 +55,10 @@ const router = createRouter({
     {
       path: '/ShuffleArraySort',
       component: ShuffleArraySort
+    },
+    {
+      path: '/GroupArrayByProperty',
+      component: GroupArrayByProperty
     },
   ]
 })
