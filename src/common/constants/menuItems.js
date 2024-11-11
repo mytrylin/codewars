@@ -73,6 +73,7 @@ export const menuItems = [
     title: '[Algorithm] 群組化物件陣列 (Group Array of Objects by Property)',
     pageName: 'GroupArrayByProperty',
     url: '/GroupArrayByProperty',
+    category: categoryList[0],
     icon: 'icon-settings'
   },
   //11
