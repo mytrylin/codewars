@@ -77,11 +77,12 @@ export const menuItems = [
     icon: 'icon-settings'
   },
   //11
-  // {
-  //   title: '[Algorithm] 迴文檢查 (Palindrome Check)',
-  //   pageName: 'PalindromeCheck',
-  //   url: '/PalindromeCheck',
-  //   icon: 'icon-settings'
-  // },
+  {
+    title: '[Algorithm] 字串中的單詞計數 (Count the Number of Words in a String)',
+    pageName: 'CountStringWords',
+    url: '/CountStringWords',
+    category: categoryList[0],
+    icon: 'icon-settings'
+  }
 
 ]

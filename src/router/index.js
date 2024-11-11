@@ -10,6 +10,7 @@ const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
 const CharacterTypeDescription = () => import('../views/pages/CharacterTypeDescription.vue')
 const ShuffleArraySort = () => import('../views/pages/ShuffleArraySort.vue')
 const GroupArrayByProperty = () => import('../views/pages/GroupArrayByProperty.vue')
+const CountStringWords = () => import('../views/pages/CountStringWords.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -60,6 +61,10 @@ const router = createRouter({
       path: '/GroupArrayByProperty',
       component: GroupArrayByProperty
     },
+    {
+      path: '/CountStringWords',
+      component: CountStringWords
+    }
   ]
 })
 

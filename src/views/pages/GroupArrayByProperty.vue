@@ -22,8 +22,8 @@ const example = ref('console.log(groupBy(items, "type"))')
 
 const inputVal = ref('')
 const menuItemsVal = ref(menuItems.slice(1))
+menuItemsVal.value.forEach(item => item.url = '')
 const inputVal2 = ref(JSON.stringify(menuItemsVal.value, null, 2))
-
 
 const solution = computed(() => {
   return menuItemsVal.value.reduce((groups, item) => {
