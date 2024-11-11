@@ -18,12 +18,12 @@
       <h3 class="title">Solution</h3>
       <Markdown :source="source"/>
     </section>
-    <BackButton />
+    <!-- <BackButton /> -->
   </div>
 </template>
 <script setup>
 import Markdown from 'vue3-markdown-it'
-import BackButton from '@/components/BackButton.vue'
+// import BackButton from '@/components/BackButton.vue' //不知為何，
 
 const props = defineProps({
   info: {

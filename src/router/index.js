@@ -1,16 +1,16 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-const Index = () => import('../views/Index.vue')
-const CreatePhoneNumber = () => import('../views/pages/CreatePhoneNumber.vue')
-const ReverseString = () => import('../views/pages/ReverseString.vue')
-const CharacterCount = () => import('../views/pages/CharacterCount.vue')
-const ArrayRemoveDuplicates = () => import('../views/pages/ArrayRemoveDuplicates.vue')
-const PalindromeCheck = () => import('../views/pages/PalindromeCheck.vue')
-const SumArray = () => import('../views/pages/SumArray.vue')
-const mergeSortedArrays = () => import('../views/pages/mergeSortedArrays.vue')
-const CharacterTypeDescription = () => import('../views/pages/CharacterTypeDescription.vue')
-const ShuffleArraySort = () => import('../views/pages/ShuffleArraySort.vue')
-const GroupArrayByProperty = () => import('../views/pages/GroupArrayByProperty.vue')
-const CountStringWords = () => import('../views/pages/CountStringWords.vue')
+const Index = () => import('@/views/Index.vue')
+const CreatePhoneNumber = () => import('@/views/pages/CreatePhoneNumber.vue')
+const ReverseString = () => import('@/views/pages/ReverseString.vue')
+const CharacterCount = () => import('@/views/pages/CharacterCount.vue')
+const ArrayRemoveDuplicates = () => import('@/views/pages/ArrayRemoveDuplicates.vue')
+const PalindromeCheck = () => import('@/views/pages/PalindromeCheck.vue')
+const SumArray = () => import('@/views/pages/SumArray.vue')
+const mergeSortedArrays = () => import('@/views/pages/mergeSortedArrays.vue')
+const CharacterTypeDescription = () => import('@/views/pages/CharacterTypeDescription.vue')
+const ShuffleArraySort = () => import('@/views/pages/ShuffleArraySort.vue')
+const GroupArrayByProperty = () => import('@/views/pages/GroupArrayByProperty.vue')
+const CountStringWords = () => import('@/views/pages/CountStringWords.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
