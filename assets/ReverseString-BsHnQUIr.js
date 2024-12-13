@@ -1,4 +1,4 @@
-import{f as o,c as p,d as m,w as d,u as e,o as n,g as f,v,b as _,i as g,a as x,t as h,h as k}from"./index-CnDFdbL1.js";import{_ as B}from"./Content-CvjWIKzT.js";const S={key:0},A={__name:"ReverseString",setup(V){const r=o("[Algorithm] 反轉字串 (Reverse String)"),i=o("寫一個函數來反轉給定的字串"),a=o('console.log(reverseString("hello")); // "olleh"'),t=o(""),l=p(()=>t.value.split("").reverse().join("")),c=o(`
+import{f as o,c as p,d as m,w as d,u as e,o as n,g as f,v,b as _,i as g,a as x,t as h,h as k}from"./index-1bFdfSIi.js";import{_ as B}from"./Content-vY5rKDt4.js";const S={key:0},A={__name:"ReverseString",setup(V){const r=o("[Algorithm] 反轉字串 (Reverse String)"),i=o("寫一個函數來反轉給定的字串"),a=o('console.log(reverseString("hello")); // "olleh"'),t=o(""),l=p(()=>t.value.split("").reverse().join("")),c=o(`
   \`\`\`javascript
     function solution(A) { 
 

@@ -1,4 +1,4 @@
-import{f as o,c as p,d as m,w as f,u as t,o as r,g as C,v as d,b as _,i as x,a as v,t as g,h as A}from"./index-CnDFdbL1.js";import{_ as k}from"./Content-CvjWIKzT.js";const B={key:0},E={__name:"CharacterCount",setup(V){const c=o("[Algorithm] 計算字串中的字元出現次數 (Character Count)"),s=o("寫一個函數，輸入一個字串，返回每個字元出現的次數"),l=o('console.log(charCount("hello")); // { h: 1, e: 1, l: 2, o: 1 }'),e=o(""),u=p(()=>{let a={};return e.value.split("").forEach(n=>{a[n]=(a[n]||0)+1}),a}),i=o(`
+import{f as o,c as p,d as m,w as f,u as t,o as r,g as C,v as d,b as _,i as x,a as v,t as g,h as A}from"./index-1bFdfSIi.js";import{_ as k}from"./Content-vY5rKDt4.js";const B={key:0},E={__name:"CharacterCount",setup(V){const c=o("[Algorithm] 計算字串中的字元出現次數 (Character Count)"),s=o("寫一個函數，輸入一個字串，返回每個字元出現的次數"),l=o('console.log(charCount("hello")); // { h: 1, e: 1, l: 2, o: 1 }'),e=o(""),u=p(()=>{let a={};return e.value.split("").forEach(n=>{a[n]=(a[n]||0)+1}),a}),i=o(`
   // example 1:
 
   \`\`\`javascript

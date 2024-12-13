@@ -1,4 +1,4 @@
-import{f as o,c as u,d as p,w as d,u as e,o as n,g as f,v as _,b as v,i as h,a as x,t as g,h as k}from"./index-CnDFdbL1.js";import{_ as A}from"./Content-CvjWIKzT.js";const B={key:0},w={__name:"PalindromeCheck",setup(C){const a=o("[Algorithm] 迴文檢查 (Palindrome Check)"),i=o("寫一個函數檢查一個字串是否為迴文（正反讀都一樣的字串）"),l=o(`console.log(isPalindrome("hello")); // false 
+import{f as o,c as u,d as p,w as d,u as e,o as n,g as f,v as _,b as v,i as h,a as x,t as g,h as k}from"./index-1bFdfSIi.js";import{_ as A}from"./Content-vY5rKDt4.js";const B={key:0},w={__name:"PalindromeCheck",setup(C){const a=o("[Algorithm] 迴文檢查 (Palindrome Check)"),i=o("寫一個函數檢查一個字串是否為迴文（正反讀都一樣的字串）"),l=o(`console.log(isPalindrome("hello")); // false 
 
   console.log(isPalindrome("madam")); // true
 `),t=o(""),r=u(()=>t.value===t.value.split("").reverse().join("")),c=o(`

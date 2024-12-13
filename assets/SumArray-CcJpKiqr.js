@@ -1,4 +1,4 @@
-import{f as s,c as p,d,w as f,u as e,o as n,g as _,v,b as x,i as y,a as A,t as g,h}from"./index-CnDFdbL1.js";import{_ as k}from"./Content-CvjWIKzT.js";const B={key:0},C={__name:"SumArray",setup(V){const r=s("[Algorithm] 陣列的元素之和 (Sum of Array Elements)"),i=s("寫一個函數來計算陣列中所有元素的和"),l=s("console.log(sumArray([1, 2, 3, 4])); // 10"),t=s(""),u=p(()=>t.value.split("").reduce((a,o)=>a+parseInt(o),0)),c=s(`
+import{f as s,c as p,d,w as f,u as e,o as n,g as _,v,b as x,i as y,a as A,t as g,h}from"./index-1bFdfSIi.js";import{_ as k}from"./Content-vY5rKDt4.js";const B={key:0},C={__name:"SumArray",setup(V){const r=s("[Algorithm] 陣列的元素之和 (Sum of Array Elements)"),i=s("寫一個函數來計算陣列中所有元素的和"),l=s("console.log(sumArray([1, 2, 3, 4])); // 10"),t=s(""),u=p(()=>t.value.split("").reduce((a,o)=>a+parseInt(o),0)),c=s(`
   \`\`\`javascript
     function solution(A) { 
 
