@@ -23,5 +23,6 @@
   "liveSassCompile.settings.showAnnouncements": null,
   //是否在編譯時顯示通知
   "liveSassCompile.settings.generateMap": false,
+  "nuxt.isNuxtApp": false,
   //是否產生 sourcemap 檔
 }

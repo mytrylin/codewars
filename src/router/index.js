@@ -11,6 +11,7 @@ const CharacterTypeDescription = () => import('@/views/pages/CharacterTypeDescri
 const ShuffleArraySort = () => import('@/views/pages/ShuffleArraySort.vue')
 const GroupArrayByProperty = () => import('@/views/pages/GroupArrayByProperty.vue')
 const CountStringWords = () => import('@/views/pages/CountStringWords.vue')
+const Get6Number = () => import('@/views/pages/Get6Number.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -20,6 +21,10 @@ const router = createRouter({
       component: Index,
     },
     // 1-5
+    {
+      path: '/Get6Number',
+      component: Get6Number
+    },
     {
       path: '/CreatePhoneNumber',
       component: CreatePhoneNumber

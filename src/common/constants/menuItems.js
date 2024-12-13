@@ -1,10 +1,17 @@
 const categoryList = [
-  'Algorithm', 'Codewars', 'LeetCode', 'Codility'
+  'Algorithm', 'Codewars', 'LeetCode', 'Codility', 'tools'
 ]
 
 export const menuItems = [
   { pageName: 'Home', icon: 'icon-home', url: '/', title: 'Home', category: null},
   //1-5
+  {
+    title: '[Codewars] Get6Number',
+    pageName: 'Get6Number',
+    url: '/Get6Number',
+    category: categoryList[4],
+    icon: 'icon-settings'
+  },
   {
     title: '[Codewars] Create Phone Number',
     pageName: 'CreatePhoneNumber',
